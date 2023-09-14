@@ -1,0 +1,51 @@
+h1 {
+  text-align: center;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  gap: 10px;
+  justify-content: center;
+  align-content: center;
+  margin: 20px;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+.card.selected {
+  background-color: #6fa3ef;
+  border: 2px solid #007bff;
+}
+
+.card.flipped {
+  background-color: #4caf50;
+  border: 2px solid #4caf50;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
